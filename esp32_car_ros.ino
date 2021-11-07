@@ -6,10 +6,8 @@
 #include <ros.h>
 #include <geometry_msgs/Twist.h>
 #include <analogWrite.h>
-#define LED_BUILTIN 2 // Remapping the built-in LED since the NodeMcu apparently uses a different one.
-#define LED_BUILTIN_RED 16 // If using a NodeMcu v1, then there's another red onboard led.
-// The min amount of PWM the motors need to move. Depends on the battery, motors and controller.
-// The max amount is defined by PWMRANGE in Arduino.h
+#define LED_BUILTIN 2 // Remapping the built-in LED .
+#define LED_BUILTIN_RED 16 // If using a NodeMcu v1.
 #define PWM_MIN 70
 #define PWMRANGE 255
 
