@@ -1,5 +1,5 @@
 ## ROS with ESP32 Car
-
+<img src="https://user-images.githubusercontent.com/49666154/140627889-2706b877-a53e-4a2d-8aa4-bf0fc475fcfe.jpg" width="700px" height="500" > 
 ##### This Robot is an Arduino based robot that is programmed to recieve a position data from ROS topic 
 
 ## Components required To build:
@@ -24,11 +24,25 @@
  
 
 ## Circuit Diagram 
-> ##### The project circuit is simple as it's only a ESP32 based car connected to L298N motor driver. most of the work is done in the programming
-<img src="https://user-images.githubusercontent.com/49666154/128810985-fdf2664e-83c6-4a8d-a168-b4ce82bab137.png" width="700px" >
 
-#### The power sources is seperated so L298N can properly handle four DC motors.
+> ##### The project circuit is simple as it's only an ESP32 based car connected to L298N motor driver. most of the work is done in the programming
+<img src="https://user-images.githubusercontent.com/49666154/140627997-56d5b1d7-0122-40ee-bfb3-f7173aa30856.jpg" width="400px" >
 
-## Obstacles Avoiding Robot in field
+### Pins:
+- D26 connected to ENA
+- D27 connected to INA1
+- D14 connected to INA2
+- D32 connected to INB1
+- D33 connected to INB2
+- D25 connected to ENB
+- GND connected to L298N GND
+- Each side of the motors is connected to one side of L298N 
+
+#### Power sources:
+##### - 9V Battery connected to L298N for motors 
+##### - 10 mAh power supply connected to ESP32
+###### The power sources seperated so L298N can properly handle four DC motors.
+
+## ESP32 car in field
 https://user-images.githubusercontent.com/49666154/128778157-4c76af22-ae89-4151-b63f-5991b3715af8.mp4
 
