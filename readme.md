@@ -1,17 +1,19 @@
 ## ROS with ESP32 Car
 <img src="https://user-images.githubusercontent.com/49666154/140627889-2706b877-a53e-4a2d-8aa4-bf0fc475fcfe.jpg" width="700px" height="500" > 
-##### This Robot is an Arduino based robot that is programmed to recieve a position data from ROS topic 
+
+##### This is an Arduino based robot that is programmed to recieve a position data from ROS  
 
 ## Components required To build:
 ##### 1-ESP32
 ##### 2-L298N H-bridge
-##### 4-Four DC motors 3-6 volts, wheels
-##### 5-Power supply and 9V battery 
+##### 3-Four DC motors 3-6 volts, wheels
+##### 4-Power supply and 9V battery 
 
-## How the Robot moves remotly with Ros ?
-#### To understand how the robot moves by ros we need to understand ESP32.
-- ##### 1-ESP32 is a low-power Microcontroller with an integrated Wi-Fi and Bluetooth, This board is used with 2.4 GHz dual-mode Wi-Fi. The reason I used it is Due to that I need to connect to the Wi-Fi.
-- ##### 2-ESP32 is programmed to connect to the Wifi and a specific IP address(ROS serial server) to recieve and translate the position data from ROS in the network layer using UDP proocol, which is a communications protocol that facilitates the exchange of messages between computing devices in a network
+## How can ROS move the car remotly?
+#### To understand this idea we firstly need to understand ESP32.
+- ##### 1-ESP32 is a low-power Microcontroller with an integrated Wi-Fi and Bluetooth, This board is used with 2.4 GHz dual-mode Wi-Fi. The reason I used it is Due to that I need to connect to the Wi-Fi in order to communicate with ROS.
+#### The idea here
+- ##### 2-ESP32 is programmed to connect to the Wifi and a specific IP address(ROS serial server) to recieve and translate the position data from ROS  (subscriping and publishing) in the network layer using UDP proocol, which is a communications protocol that facilitates the exchange of messages between computing devices in a network
 
 ## Understanding L298N H-bridge motor driver  
 <img src="https://user-images.githubusercontent.com/49666154/128776326-36a2416f-9356-49f9-842e-ab9bff2704f0.jpeg" width="300px" > <img src="https://user-images.githubusercontent.com/49666154/128803887-7bc041e8-9c74-42aa-8f75-aa2c68efa30d.png" width="400px" >
@@ -40,9 +42,6 @@
 
 #### Power sources:
 ##### - 9V Battery connected to L298N for motors 
-##### - 10 mAh power supply connected to ESP32
+##### - 10k mAh power supply connected to ESP32
 ###### The power sources seperated so L298N can properly handle four DC motors.
-
-## ESP32 car in field
-https://user-images.githubusercontent.com/49666154/128778157-4c76af22-ae89-4151-b63f-5991b3715af8.mp4
 
