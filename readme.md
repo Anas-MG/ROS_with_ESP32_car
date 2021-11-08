@@ -1,5 +1,6 @@
 ## ROS with ESP32 Car
-<img src="https://user-images.githubusercontent.com/49666154/140627889-2706b877-a53e-4a2d-8aa4-bf0fc475fcfe.jpg" width="700px" height="500" > 
+<img 
+src="https://user-images.githubusercontent.com/49666154/140733000-94906f91-95a6-4caf-8942-75631905dc4c.jpg" width="700px"  > 
 
 ##### This is an Arduino based robot that is programmed to recieve a position data from ROS  
 
@@ -12,7 +13,6 @@
 ## How can ROS move the car remotly?
 #### To understand this idea we firstly need to understand ESP32.
 - ##### 1-ESP32 is a low-power Microcontroller with an integrated Wi-Fi and Bluetooth, This board is used with 2.4 GHz dual-mode Wi-Fi. The reason I used it is Due to that I need to connect to the Wi-Fi in order to communicate with ROS.
-#### The idea here
 - ##### 2-ESP32 is programmed to connect to the Wifi and a specific IP address(ROS serial server) to recieve and translate the position data from ROS  (subscriping and publishing) in the network layer using UDP proocol, which is a communications protocol that facilitates the exchange of messages between computing devices in a network
 
 ## Understanding L298N H-bridge motor driver  
@@ -21,7 +21,7 @@
 ##### The L298N is a dual H-Bridge motor driver which allows speed and direction control of two DC motors at the same time. it won't allow the independent control of four motors, but you could possibly connect two in parallel to each output, like this project. It's recommended to power it with 7-12 volts.
 
 - ##### Outx pins for the dc motors
-- ##### IN1-IN2 and IN2-IN4 pins controles direction 
+- ##### IN1-IN2 and IN3-IN4 pins controles direction 
 - ##### ENA & ENB pins are puls width modulation pins that controls the speed
  
 
@@ -34,8 +34,8 @@
 - D26 connected to ENA
 - D27 connected to INA1
 - D14 connected to INA2
-- D32 connected to INB1
-- D33 connected to INB2
+- D32 connected to INB3
+- D33 connected to INB4
 - D25 connected to ENB
 - GND connected to L298N GND
 - Each side of the motors is connected to one side of L298N 
