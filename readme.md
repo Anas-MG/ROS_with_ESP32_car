@@ -2,7 +2,7 @@
 <img 
 src="https://user-images.githubusercontent.com/49666154/140733000-94906f91-95a6-4caf-8942-75631905dc4c.jpg" width="700px"  > 
 
-##### This is an Arduino based robot that is programmed to recieve a position data from ROS  
+##### This is an Arduino based robot that is programmed to recieve a move data from ROS  
 
 ## Components required To build:
 ##### 1-ESP32
