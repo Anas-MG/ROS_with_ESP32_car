@@ -140,7 +140,6 @@ void onTwist(const geometry_msgs::Twist &msg)
   float z = max(min(msg.angular.z, 1.0f), -1.0f);
 
   // Calculate the intensity of left and right wheels. Simple version.
-  // Taken from https://hackernoon.com/unicycle-to-differential-drive-courseras-control-of-mobile-robots-with-ros-and-rosbots-part-2-6d27d15f2010#1e59
   float l = (msg.linear.x - msg.angular.z) / 2;
   float r = (msg.linear.x + msg.angular.z) / 2;
 
