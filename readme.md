@@ -45,3 +45,6 @@ src="https://user-images.githubusercontent.com/49666154/140733000-94906f91-95a6-
 ##### - 10k mAh power supply connected to ESP32
 ###### The power sources seperated so L298N can properly handle four DC motors.
 
+# Robot movement
+#### After connecting the robot with the power the esp32 will try to connect to the network , if this succedd the car should move with teleop command 
+> rosrun teleop_twist_keyboard teleop_twist_keyboard.py
