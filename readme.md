@@ -48,3 +48,5 @@ src="https://user-images.githubusercontent.com/49666154/140733000-94906f91-95a6-
 # Robot movement
 #### After connecting the robot with the power the esp32 will try to connect to the network , if this succedd the car should move with teleop command 
 > rosrun teleop_twist_keyboard teleop_twist_keyboard.py
+
+Note: The master node needs to be on before this
