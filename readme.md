@@ -45,8 +45,10 @@ src="https://user-images.githubusercontent.com/49666154/140733000-94906f91-95a6-
 ##### - 10k mAh power supply connected to ESP32
 ###### The power sources seperated so L298N can properly handle four DC motors.
 
-# Robot movement
-#### After connecting the robot with the power the esp32 will try to connect to the network , if this succedd the car should move with teleop command 
-> rosrun teleop_twist_keyboard teleop_twist_keyboard.py
+# ROS Operations:
+launch rosserial socket node: roslaunch rosserial_server socket.launch
+Launch gamepad node in a new terminal: roslaunch teleop_twist_joy teleop.launch joy_config:=__insert gamepad type__ or
+Keybord node: rosrun teleop_twist_keyboard teleop_twist_keyboard.py
+This should suffice to make the robot car connect to your Wifi and rosserial server and follow twist commands from your gamepad.
 
-Note: The master node needs to be on before this
+
