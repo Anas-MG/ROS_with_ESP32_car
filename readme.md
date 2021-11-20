@@ -13,7 +13,7 @@ src="https://user-images.githubusercontent.com/49666154/140733000-94906f91-95a6-
 
 ## How can ROS move the car remotly?
 #### To understand this idea we firstly need to understand ESP32.
-- ##### 1-ESP32 is a low-power Microcontroller with an integrated Wi-Fi and Bluetooth, This board is used with 2.4 GHz dual-mode Wi-Fi. The reason I used it is Due to that I need to connect to the Wi-Fi in order to communicate with ROS.
+- ##### 1-ESP32 is a low-power Microcontroller with an integrated Wi-Fi and Bluetooth, This board is used with 2.4 GHz dual-mode Wi-Fi. The reason I used it is Due to that I need to the need of the Wi-Fi in order to communicate with ROS.
 - ##### 2-ESP32 is programmed to connect to the Wifi and a specific IP address(ROS serial server) to recieve and translate the position data from ROS  (subscriping and publishing) in the network layer using UDP proocol, which is a communications protocol that facilitates the exchange of messages between computing devices in a network
 
 ## Understanding L298N H-bridge motor driver  
