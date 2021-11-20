@@ -8,7 +8,8 @@ src="https://user-images.githubusercontent.com/49666154/140733000-94906f91-95a6-
 ##### 1-ESP32
 ##### 2-L298N H-bridge
 ##### 3-Four DC motors 3-6 volts, wheels
-##### 4-Power supply and 9V battery 
+##### 4-Power supply 
+##### 5-9V battery
 
 ## How can ROS move the car remotly?
 #### To understand this idea we firstly need to understand ESP32.
@@ -30,7 +31,7 @@ src="https://user-images.githubusercontent.com/49666154/140733000-94906f91-95a6-
 > ##### The project circuit is simple as it's only an ESP32 based car connected to L298N motor driver. most of the work is done in the programming
 <img src="https://user-images.githubusercontent.com/49666154/140627997-56d5b1d7-0122-40ee-bfb3-f7173aa30856.jpg" width="400px" >
 
-### Pins:
+# Connection:
 - D26 connected to ENA
 - D27 connected to INA1
 - D14 connected to INA2
