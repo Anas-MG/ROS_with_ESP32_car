@@ -8,7 +8,7 @@ src="https://user-images.githubusercontent.com/49666154/140733000-94906f91-95a6-
 ##### 1-ESP32
 ##### 2-L298N H-bridge
 ##### 3-Four DC motors 3-6 volts, wheels
-##### 4-Power supply 
+##### 4- 10k mAh Power supply 
 ##### 5-9V battery
 
 ## How can ROS move the car remotly?
@@ -42,7 +42,7 @@ src="https://user-images.githubusercontent.com/49666154/140733000-94906f91-95a6-
 - Each side of the motors is connected to one side of L298N 
 
 #### Power sources:
-##### - 9V Battery connected to L298N for motors 
+##### - 9V Battery connected to L298N for DC motors 
 ##### - 10k mAh power supply connected to ESP32
 ###### The power sources seperated so L298N can properly handle four DC motors.
 
