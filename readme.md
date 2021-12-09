@@ -12,12 +12,20 @@ src="https://user-images.githubusercontent.com/49666154/140733000-94906f91-95a6-
  - #### the program connects The ESP32 to the Wifi and a ROS serial server machine IP address, then it'll subscribe to a specific ROS topic in that machine so whenever when press keyboard to move towards any side it will understand and move the ESP32 accordingly.
 
 ## ROS Operations:
-- ### Launch rosserial socket node so that the ESP32 connects to the machine:
+- #### Launch rosserial socket node so that the ESP32 connects to the machine:
 > roslaunch rosserial_server socket.launch
-- ### Launch Keybord node to control the robot: 
+- #### Launch Keybord node to control the robot: 
 > rosrun teleop_twist_keyboard teleop_twist_keyboard.py
 
 
+
+
+# Required components :
+##### 1-ESP32
+##### 2-L298N H-bridge
+##### 3-Four DC motors 3-6 volts with wheels
+##### 4-10k mAh Power supply 
+##### 5-9V battery
 
 ## L298N H-bridge motor driver  
 <img src="https://user-images.githubusercontent.com/49666154/128776326-36a2416f-9356-49f9-842e-ab9bff2704f0.jpeg" width="300px" > <img src="https://user-images.githubusercontent.com/49666154/128803887-7bc041e8-9c74-42aa-8f75-aa2c68efa30d.png" width="400px" >
@@ -26,13 +34,6 @@ src="https://user-images.githubusercontent.com/49666154/140733000-94906f91-95a6-
 - ##### IN1-IN2 and IN3-IN4 pins controles direction 
 - ##### ENA & ENB pins are puls width modulation pins that controls the speed
  
-# Required components :
-##### 1-ESP32
-##### 2-L298N H-bridge
-##### 3-Four DC motors 3-6 volts with wheels
-##### 4-10k mAh Power supply 
-##### 5-9V battery
-
 # Connection :
 - ##### D26 connected to ENA
 - ##### D27 connected to INA1
