@@ -34,7 +34,7 @@ src="https://user-images.githubusercontent.com/49666154/140733000-94906f91-95a6-
 - ##### IN1-IN2 and IN3-IN4 pins controles direction 
 - ##### ENA & ENB pins are puls width modulation pins that controls the speed
  
-# Connection :
+## Connection :
 - ##### D26 connected to ENA
 - ##### D27 connected to INA1
 - ##### D14 connected to INA2
@@ -43,11 +43,12 @@ src="https://user-images.githubusercontent.com/49666154/140733000-94906f91-95a6-
 - ##### D25 connected to ENB
 - ##### GND connected to L298N GND
 - ##### Each side of the motors is connected to OUTx pin L298N 
-#### Power sources:
+##### Power sources:
+###### The power sources are seperated so L298N can properly handle four DC motors.
 ##### - 9V Battery connected to L298N for DC motors 
 ##### - 10k mAh power supply connected to ESP32
-###### The power sources seperated so L298N can properly handle four DC motors.
+ ###### After plugging the power sources and running ROS operations the robot car should be connected to rosserial server and subscribe to /cmd_vel topic, to check it run rostopic echo /cmd_vel
+##
 
- After plugging the power sources and running ROS operations the robot car should be connected to rosserial server and subscribe to  topic .
- Note: the blue led indicates wither ROS connected or not, Off means its connected.
+ ###### Note: The program will switch Off the ESP32 blue led only when It's connected to the Rosserial server in the machine.
 
