@@ -19,8 +19,8 @@ src="https://user-images.githubusercontent.com/49666154/140733000-94906f91-95a6-
 
 
 
-
-# Required components :
+# Building the robot
+## Required components :
 ##### 1-ESP32
 ##### 2-L298N H-bridge
 ##### 3-Four DC motors 3-6 volts with wheels
