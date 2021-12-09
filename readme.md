@@ -9,7 +9,7 @@ src="https://user-images.githubusercontent.com/49666154/140733000-94906f91-95a6-
 - ##### ESP32 is a low-power Microcontroller with an integrated Wi-Fi and Bluetooth, This board is used with 2.4 GHz dual-mode Wi-Fi. The reason I used it is Due  to the need of the Wi-Fi in order to communicate with ROS.
  #
  #### The projects program
- - #### the program connects The ESP32 to the Wifi and a ROS serial server machine IP address, then it'll subscribe to a specific ROS topic in that machine so whenever when press keyboard to move towards any side it will understand and move the ESP32 accordingly.
+ - #### The program will connect The ESP32 to the Wifi and a ROS serial server machine IP address, then it'll subscribe to a specific ROS topic in that machine so whenever when press keyboard to move towards any side it will understand and move the ESP32 accordingly.
 
 ## ROS Operations:
 - #### Launch rosserial socket node so that the ESP32 connects to the machine:
