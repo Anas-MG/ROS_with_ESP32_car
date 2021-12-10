@@ -1,5 +1,5 @@
 ## ROS with ESP32 Car
-##### This is an ESP32 robot car project that is designed to move by ROS. 
+##### This is an ESP32 robot car that is designed to move by ROS. 
 
 <img 
 src="https://user-images.githubusercontent.com/49666154/140733000-94906f91-95a6-4caf-8942-75631905dc4c.jpg" width="700px"  > 
